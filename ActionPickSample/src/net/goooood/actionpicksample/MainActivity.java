@@ -49,13 +49,13 @@ public class MainActivity extends Activity {
 	private void actionPickCrop(){
 		Intent intent = new Intent(Intent.ACTION_PICK);
 		intent.setType("image/*");
-	    intent.putExtra("crop", "true");
-	    intent.putExtra("aspectX", 1);
-	    intent.putExtra("aspectY", 1);
-	    intent.putExtra("outputX", 280);
-	    intent.putExtra("outputY", 280);
-	    intent.putExtra("return-data", true); 
-	    startActivityForResult(intent , REQ_ACTION_PICK_CROP);		
+		intent.putExtra("crop", "true");
+		intent.putExtra("aspectX", 1);
+		intent.putExtra("aspectY", 1);
+		intent.putExtra("outputX", 280);
+		intent.putExtra("outputY", 280);
+		intent.putExtra("return-data", true); 
+		startActivityForResult(intent , REQ_ACTION_PICK_CROP);		
 	}
 
 	
